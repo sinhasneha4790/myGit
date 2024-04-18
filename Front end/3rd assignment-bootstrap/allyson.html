@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allyson Felix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">>
+    <!-- Latest compiled Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Firstpage.html"><b>FameSTUDIO</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="2ndpage.html"><b>Home</b></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>Profiles</b>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="leader.html"><b>Leaders</b></a></li>
+                            <li><a class="dropdown-item" href="artist.html"><b>Artists</b></a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="other.html"><b>Others</b></a></li>
+                            <li><a class="dropdown-item" href="contact.html"><b>Contact us</b></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.html"><b>Logout</b></a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 main">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pname" style="padding: 5px 0px;">
+            <h1>Allyson Felix <span class="hide_on_mobile hide_on_tab bio">Biography</span></h1>
+            <div class="clear"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="data:image/jpeg;base64,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"
+                        class="card-img-top" alt="Image 8">
+
+                    <h5 class="card-title">An AMERICAN TRACK and FIELD ATHELETE</h5>
+
+                </div>
+            </div>
+        </div>
+        <p><b><strong>Allyson Michelle Felix OLY</strong></b> (born November 18, 1985) is a retired American track and
+            field athlete who competed in the 100 meters, 200 meters and 400 meters. She specialized in the 200 meters
+            from 2003 to 2013, then gradually shifted to the 400 meters later in her career. At 200 meters, Felix is the
+            2012 Olympic champion, a three-time world champion (2005–2009), a two-time Olympic silver medalist (2004 and
+            2008), and the 2011 world bronze medalist. At 400 meters, she is the 2015 world champion, 2011 world silver
+            medalist, 2016 Olympic silver medalist, 2017 world bronze medalist, and 2020 Olympic bronze medalist. Across
+            the short distances, Felix is a ten-time U.S. national champion (2004, 2005, 2007–2012, 2015 and 2016).</p>
+        <p>Felix played a key role on the United States women's relay teams, winning six additional Olympic gold medals:
+            four consecutive medals at 4 × 400 meters (2008, 2012, 2016, and 2020) and two at 4 × 100 meters (2012 and
+            2016). The 2012 and 2016 U.S. Olympic 4 × 100 m teams set a world record of 40.82 s and the second fastest
+            time of 41.01 s, respectively. With these six golds from relays and one from an individual event, Felix
+            became the first female track and field athlete to ever win seven Olympic gold medals.</p>
+        <p> She is also the most decorated woman in Olympic track and field history and the most decorated American
+            track and field athlete in Olympic history, having earned 11 total medals from five consecutive Olympic
+            Games. Felix is the most decorated athlete, male or female, in World Athletics Championships history with 20
+            career medals, 7 from individual events and 13 from team relays. With a combined Olympic and World
+            Championship total of 31 medals, she is also the overall most decorated athlete in track and field history,
+            with 12 medals from individual events and 19 from relays.</p>
+        <p>She was included in Time magazine's 100 Most Influential People of 2020 and 2021. In 2022, Felix received an
+            honorary Doctor of Humane Letters degree from her alma mater USC and also served as the commencement speaker
+            for that year's graduation ceremony.</p>
+    </div>
+
+
+    <!-- Include Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0023073267844535"
+        crossorigin="anonymous" type="ee1e0bb8f2aa6bb4761913a4-text/javascript"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91T20S5ZRX"
+        type="ee1e0bb8f2aa6bb4761913a4-text/javascript"></script>
+
+</body>
+
+</html>

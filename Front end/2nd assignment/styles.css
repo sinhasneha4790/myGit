@@ -1,0 +1,154 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2021/02/06/19/29/pancakes-5989136_1280.jpg);
+}
+@font-face {
+    font-family: 'StylishFont';
+    src: url('path/to/your/font.woff2') format('woff2'),
+         url('path/to/your/font.woff') format('woff');
+}
+
+header {
+    background-blend-mode: normal;
+    color: brown;
+    text-align: center;
+    padding: 1em 0;
+    background: linear-gradient(to right, rgb(133, 65, 2), #ec9f45);
+    color: #521911;
+}
+header img {
+    max-width: 70px; /* Adjust the maximum width of the logo */
+    margin-bottom: 5px; /* Optional: Add margin below the logo */
+    align-content:last baseline;
+}
+nav {
+    background-color: #444;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-style: inherit;
+}
+
+nav ul li a {
+    text-decoration: wavy;
+    color: #fff;
+    padding: 15px;
+    display: block;
+    transition: background-color 0.5s ease;
+}
+
+nav ul li a:hover {
+    background-color: #666;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.food-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.food-item img {
+    width: 300px;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-item h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    background-color: #666;
+}
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    float: left;
+    width: 20%;
+}
+/*--------------------SLIDE ANIMATION--------------*/
+@keyframes slider{
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+}
+/*-------End of ANimation----*/
+h2{
+    text-align: center;
+    border-radius: 1px;
+    border: #444;
+    border-bottom: #444;
+}
+.about-section,
+.mission-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+}
+
+.about-content,
+.mission-content {
+    max-width: 600px;
+    font-weight: bolder;
+}
+
+.about-image,
+.mission-image {
+    flex-shrink: 0;
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+.about-image img,
+.mission-image img {
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+p {
+    line-height: 1.6;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ady Barkan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">>
+    <!-- Latest compiled Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Firstpage.html"><b>FameSTUDIO</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="2ndpage.html"><b>Home</b></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>Profiles</b>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="leader.html"><b>Leaders</b></a></li>
+                            <li><a class="dropdown-item" href="artist.html"><b>Artists</b></a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="other.html"><b>Others</b></a></li>
+                            <li><a class="dropdown-item" href="contact.html"><b>Contact us</b></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.html"><b>Logout</b></a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 main">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pname" style="padding: 5px 0px;">
+            <h1>Ady Barkan <span class="hide_on_mobile hide_on_tab bio">Biography</span></h1>
+            <div class="clear"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <img src="data:image/jpeg;base64,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"
+                        class="card-img-top" alt="Image 9">
+
+                    <h5 class="card-title">An AMERICAN LAWYER and ACTIVIST</h5>
+
+                </div>
+            </div>
+        </div>
+        <p><b><strong>Ohad "Ady" Barkan</strong></b> (December 18, 1983 – November 1, 2023) was an American lawyer and
+            activist. He was co-founder of the Be a Hero PAC and was an organizer for the Center for Popular Democracy,
+            where he led the Fed Up campaign. Barkan confronted Senator Jeff Flake on a plane in 2017, asking him to "be
+            a hero" and vote no on a tax bill that threatened cuts to Medicare, Medicaid, and Social Security.</p>
+        <p> Barkan, who was diagnosed with the terminal neurodegenerative disease ALS (also known as Lou Gehrig's
+            disease) in 2016 shortly after the birth of his son, was called "the most powerful activist in America" in a
+            headline from 2019 in Politico Magazine. In 2020, he was included on Time's list of the 100 most influential
+            people in the world.</p>
+        <p>Barkan was also a national co-chair of Health Care Voter. Barkan was named one of the Top 50 Political
+            Thinkers in 2016 by Politico and in 2018, he was listed in the 50 most influential American Jews by Forward.</p>
+            <p>During the July 2019 debate, Elizabeth Warren mentioned Barkan's struggle as an example of the inadequacies
+            of private insurance. In August 2019, Barkan had his first interview with a presidential candidate. He spoke
+            with Cory Booker and discussed Booker's plans for healthcare reform. During the interview, they also
+            discussed how it was for Booker to watch his father, who died of Parkinson's, become ill and die.</p>
+    </div>
+
+
+    <!-- Include Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0023073267844535"
+        crossorigin="anonymous" type="ee1e0bb8f2aa6bb4761913a4-text/javascript"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91T20S5ZRX"
+        type="ee1e0bb8f2aa6bb4761913a4-text/javascript"></script>
+
+</body>
+
+</html>

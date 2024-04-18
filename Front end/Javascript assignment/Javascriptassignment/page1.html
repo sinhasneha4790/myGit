@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap JavaScript Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body{
+        justify-content: center;
+        align-items: center;
+      }
+      div{
+        text-align: center;
+      }
+      div h1{
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+      }
+      div hr{
+        margin: 14px 0;
+      }
+      div input[type=number]{
+        margin: 8px 0;
+        padding: 8px;
+        width: 100%;
+        font-size: 16px;
+
+      }
+      div input[type=text]:read-only{
+        margin: 0 4px;
+        margin-top: 20px;
+        border: 1px solid grey;
+        background-color: rgb(165, 161, 161);
+        color: black;
+        text-align: center;
+        width: 40%;
+      }
+      div select{
+        margin: 0 4px;
+        padding: 6px 0;
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold;
+        align-content: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .container{
+        align-items: center;
+      }
+      div button{
+        margin: 0 6px;
+        padding: 6px 0;
+        width: 60%;
+        border-radius: 1px solid;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      
+    </style>
+</head>
+
+<body>
+    <!--creating Calculator tempelate Using Bootstrap-->
+    <div class="container">
+        <h1 style="text-align: center">JavaScript Calculator</h1>
+    
+    <hr>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <label for="num1" class="form-label">Number-1</label>
+        <input class="form-control" type="number" id="num1" />
+      </div>
+      <div class="col-md-4">
+        <label for="operator" class="form-label">Operator</label>
+        <select id="operator" class="form-select">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="num2" class="form-label">Number-2</label>
+        <input type="number" class="form-control" id="num2" />
+      </div>
+    </div>
+      <div>
+        <button class="btn btn-primary btn-block mb-9 mt-3" onclick="calculate()">Submit</button>
+    </div>
+    <div>
+            <label for="result" class="form-label"><b>Result</b></label>
+            <input type="text" id="result" aria-label="readonly input example" readonly>
+              </div>
+        </div>
+    <script>
+        //setup the Variables by JAVASCRIPT by declaring
+        function calculate() {
+      var num1 = parseFloat(document.getElementById("num1").value);
+      var num2 = parseFloat(document.getElementById("num2").value);
+      var operator = document.getElementById("operator").value;
+
+      var result;
+      //Switch case for multiple options
+      switch (operator) {
+        case "+":
+          result = num1 + num2;
+          break;
+        case "-":
+          result = num1 - num2;
+          break;
+        case "*":
+          result = num1 * num2;
+          break;
+        case "/":
+          result = num1 / num2;
+          break;
+        default:
+          result = "Invalid operator";
+      }
+
+      document.getElementById("result").value = result;
+    }  
+    </script>
+</body>
+</html>
